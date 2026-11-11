@@ -1,139 +1,503 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NG">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Peter | Social Media Manager</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap">
-<style>
-:root{--bg:#F2F4F8;--surface:#FFFFFF;--ink:#101828;--muted:#566072;--line:#D9DEE8;--blue:#2B4EFF;--on-blue:#FFFFFF;--sun:#FFB400;--on-sun:#101828;--ph:#FFF1C2;--ph-ink:#6B4A00;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1420;--surface:#171E2D;--ink:#F2F4F8;--muted:#9AA5B8;--line:#2A3347;--blue:#6C86FF;--on-blue:#0F1420;--ph:#3A2F0A;--ph-ink:#FFD66B}}
-:root[data-theme="dark"]{--bg:#0F1420;--surface:#171E2D;--ink:#F2F4F8;--muted:#9AA5B8;--line:#2A3347;--blue:#6C86FF;--on-blue:#0F1420;--ph:#3A2F0A;--ph-ink:#FFD66B}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.6;font-size:17px}
-h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.05;margin:0;letter-spacing:-.02em}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
-section{padding:64px 0}
-h2{font-size:clamp(28px,5vw,40px);margin-bottom:12px}
-.lede{color:var(--muted);max-width:56ch;margin:0 0 32px}
-.ph{background:var(--ph);color:var(--ph-ink);padding:0 5px;border-radius:4px;font-weight:500}
-nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
-nav b{font-family:"Bricolage Grotesque",sans-serif;font-size:20px}
-nav a{text-decoration:none;font-weight:500}
-.hero{display:grid;gap:40px;padding:36px 0 56px;align-items:center}
-@media(min-width:800px){.hero{grid-template-columns:1.15fr .85fr}}
-.hero h1{font-size:clamp(44px,9vw,84px);font-weight:800}
-.hero p{font-size:19px;color:var(--muted);max-width:46ch;margin:20px 0 28px}
-.btn{display:inline-block;background:var(--blue);color:var(--on-blue);padding:14px 24px;border-radius:999px;font-weight:700;text-decoration:none}
-.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--line);margin-left:8px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:380px;justify-self:center;width:100%}
-.tile{aspect-ratio:1;border-radius:10px;padding:10px;display:flex;align-items:flex-end;font-weight:700;font-size:13px;background:var(--surface);border:1px solid var(--line)}
-.tile.b{background:var(--blue);color:var(--on-blue);border-color:transparent}
-.tile.s{background:var(--sun);color:var(--on-sun);border-color:transparent}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
-.stat{border-top:3px solid var(--blue);padding-top:12px}
-.stat strong{font-family:"Bricolage Grotesque",sans-serif;font-size:38px;display:block}
-.stat span{color:var(--muted);font-size:15px}
-.cols{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
-.card h3{font-size:22px;margin-bottom:8px}
-.card p{margin:6px 0;color:var(--muted)}
-.card p b{color:var(--ink)}
-.tag{display:inline-block;font-size:13px;font-weight:700;color:var(--blue);margin-bottom:10px}
-.steps{display:grid;gap:14px;counter-reset:s;padding:0;list-style:none;margin:0}
-.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start}
-.steps li::before{content:counter(s);width:44px;height:44px;border-radius:50%;background:var(--sun);color:var(--on-sun);display:grid;place-items:center;font-weight:800}
-.steps b{display:block}
-.steps span{color:var(--muted)}
-footer{padding:64px 0 48px;border-top:1px solid var(--line)}
-footer h2{font-size:clamp(34px,7vw,64px)}
-.links{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}
-.links a{font-weight:700}
-.note{font-size:14px;color:var(--muted);margin-top:36px}
-@media(prefers-reduced-motion:no-preference){.tile{animation:pop .5s both}.tile:nth-child(2){animation-delay:.05s}.tile:nth-child(3){animation-delay:.1s}.tile:nth-child(4){animation-delay:.15s}.tile:nth-child(5){animation-delay:.2s}.tile:nth-child(6){animation-delay:.25s}.tile:nth-child(7){animation-delay:.3s}.tile:nth-child(8){animation-delay:.35s}.tile:nth-child(9){animation-delay:.4s}}
-@keyframes pop{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:none}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KikiKrafts | Handmade Adire Fabric in Ile-Ife, Osogbo</title>
+  <meta name="description" content="Handmade adire fabric, T-shirts and notepads in Ile-Ife and Osogbo. Custom and bulk adire orders across Nigeria, placed easily on WhatsApp.">
+  <meta name="theme-color" content="#2e1c12">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="KikiKrafts">
+  <meta property="og:title" content="KikiKrafts | Yoruba heritage you can wear">
+  <meta property="og:description" content="Handmade adire fabric, T-shirts, shorts and notepads from Ile-Ife and Osogbo. Order on WhatsApp.">
+  <meta property="og:image" content="images/og-share.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Models wearing handmade adire-style outfits from KikiKrafts">
+  <meta property="og:locale" content="en_NG">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KikiKrafts | Yoruba heritage you can wear">
+  <meta name="twitter:description" content="Handmade adire fabric, T-shirts, shorts and notepads from Ile-Ife and Osogbo. Order on WhatsApp.">
+  <meta name="twitter:image" content="images/og-share.jpg">
+  <meta name="twitter:image:alt" content="Models wearing handmade adire-style outfits from KikiKrafts">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="images/hero-adire-group-styling.jpg">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "#kikikrafts",
+        "name": "KikiKrafts",
+        "description": "Handmade adire (Yoruba resist-dyed textile) fabrics and wearables from Ile-Ife and Osogbo, Nigeria.",
+        "image": "images/og-share.jpg",
+        "telephone": "+2348121430309",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Mayfair",
+          "addressLocality": "Ile-Ife",
+          "addressRegion": "Osun State",
+          "addressCountry": "NG"
+        },
+        "areaServed": ["Ile-Ife", "Osogbo", "Nigeria"],
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "08:00",
+          "closes": "20:00"
+        }],
+        "sameAs": [
+          "https://www.instagram.com/kikikrafts_adire",
+          "https://www.tiktok.com/@KikiKrafts_adire"
+        ]
+      },
+      {
+        "@type": "Product",
+        "name": "Adire fabric",
+        "description": "Handmade adire fabric sold by the yard.",
+        "image": "images/fabric-indigo-dip-adire-cloth.jpg",
+        "brand": {"@type": "Brand", "name": "KikiKrafts"},
+        "offers": {"@type": "Offer", "price": "4000", "priceCurrency": "NGN", "availability": "https://schema.org/InStock", "description": "Price per yard"}
+      },
+      {
+        "@type": "Product",
+        "name": "Adire T-shirt (round neck)",
+        "description": "Handmade round-neck adire T-shirt. Price depends on size.",
+        "image": "images/tshirt-purple-spiral-adire.jpg",
+        "brand": {"@type": "Brand", "name": "KikiKrafts"},
+        "offers": {"@type": "Offer", "price": "10000", "priceCurrency": "NGN", "availability": "https://schema.org/InStock"}
+      },
+      {
+        "@type": "Product",
+        "name": "Adire unisex shorts",
+        "description": "Handmade unisex shorts in adire patterns.",
+        "image": "images/shorts-adire-print-flat-lay.jpg",
+        "brand": {"@type": "Brand", "name": "KikiKrafts"},
+        "offers": {"@type": "Offer", "price": "6000", "priceCurrency": "NGN", "availability": "https://schema.org/InStock"}
+      },
+      {
+        "@type": "Product",
+        "name": "Adire notepad",
+        "description": "Adire-covered notepad in three sizes that differ by 100 pages. Minimum order 2 pieces.",
+        "image": "images/notepad-indigo-spiral-adire-cover.jpg",
+        "brand": {"@type": "Brand", "name": "KikiKrafts"},
+        "offers": [
+          {"@type": "Offer", "name": "Small", "price": "3500", "priceCurrency": "NGN", "availability": "https://schema.org/InStock"},
+          {"@type": "Offer", "name": "Medium", "price": "6000", "priceCurrency": "NGN", "availability": "https://schema.org/InStock"},
+          {"@type": "Offer", "name": "Large", "price": "7000", "priceCurrency": "NGN", "availability": "https://schema.org/InStock"}
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-<div class="wrap">
-<nav><b>Peter</b><a href="#contact">Get in touch</a></nav>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.2-1.4A9.9 9.9 0 1 0 12.04 2zm5.8 14.1c-.25.7-1.4 1.3-1.9 1.35-.5.05-1.1.2-3.7-.8-3.1-1.2-5-4.4-5.2-4.6-.15-.2-1.2-1.6-1.2-3s.75-2.1 1-2.4c.25-.3.55-.35.75-.35h.55c.2 0 .4 0 .6.45.25.55.8 1.9.85 2 .05.15.1.3 0 .5-.1.2-.15.3-.3.5-.15.15-.3.35-.45.5-.15.15-.3.3-.15.6.15.3.7 1.15 1.5 1.85 1.05.9 1.9 1.2 2.2 1.35.3.15.45.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.25.65-.15.25.1 1.6.75 1.9.9.3.15.45.2.55.3.1.15.1.7-.15 1.4z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
 
-<header class="hero">
-<div>
-<h1>I turn feeds into audiences.</h1>
-<p>Social media manager and brand designer. I plan the content, design it, edit the video, and track what works, so your brand grows with people who care.</p>
-<a class="btn" href="#work">See my work</a><a class="btn alt" href="#contact">Hire me</a>
-</div>
-<div class="grid" aria-hidden="true">
-<div class="tile b">Reel</div><div class="tile">Carousel</div><div class="tile s">Story</div>
-<div class="tile">Post</div><div class="tile b">Launch</div><div class="tile">Reel</div>
-<div class="tile s">Poll</div><div class="tile">Carousel</div><div class="tile b">Collab</div>
-</div>
-</header>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<section id="results">
-<h2>Results so far</h2>
-<p class="lede">Real numbers from real accounts. Replace each highlighted figure with yours.</p>
-<div class="stats">
-<div class="stat"><strong class="ph">[+X%]</strong><span>follower growth in [X] months</span></div>
-<div class="stat"><strong class="ph">[X%]</strong><span>average engagement rate</span></div>
-<div class="stat"><strong class="ph">[X]K</strong><span>peak reel views</span></div>
-<div class="stat"><strong class="ph">[X]</strong><span>brands and projects managed</span></div>
-</div>
-</section>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="KikiKrafts, back to top">KikiKrafts</a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#products">Shop</a></li>
+          <li><a href="#quiz">Find your piece</a></li>
+          <li><a href="#adire">What is adire?</a></li>
+          <li><a href="#custom">Custom orders</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--light btn--sm header-cta" href="https://wa.me/2348121430309?text=Hi%20KikiKrafts%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg><span>Order on WhatsApp</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="menu-bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
 
-<section id="services">
-<h2>What I do</h2>
-<p class="lede">One person covering strategy, design, and video, so nothing gets lost between teams.</p>
-<div class="cols">
-<div class="card"><h3>Content strategy</h3><p>Monthly calendars built around your audience, your goals, and the formats that perform on each platform.</p></div>
-<div class="card"><h3>Design and branding</h3><p>Carousels, covers, templates, and story sets that look like one brand. Built in Figma, Canva, and Adobe.</p></div>
-<div class="card"><h3>Video and reels</h3><p>Shooting direction, editing, captions, and hooks for short-form video.</p></div>
-<div class="card"><h3>Community and analytics</h3><p>Replying, engaging, and a clear monthly report on what grew and what to change.</p></div>
-</div>
-</section>
+  <main id="main">
 
-<section id="work">
-<h2>Selected work</h2>
-<p class="lede">Each project follows the same story: the problem, what I did, what changed.</p>
-<div class="cols">
-<div class="card"><span class="tag">Project name</span><h3 class="ph">[Brand or account]</h3>
-<p><b>Challenge:</b> <span class="ph">[What was not working?]</span></p>
-<p><b>What I did:</b> <span class="ph">[Strategy, content types, posting rhythm]</span></p>
-<p><b>Result:</b> <span class="ph">[Numbers, before and after]</span></p></div>
-<div class="card"><span class="tag">Project name</span><h3 class="ph">[Brand or account]</h3>
-<p><b>Challenge:</b> <span class="ph">[What was not working?]</span></p>
-<p><b>What I did:</b> <span class="ph">[Strategy, content types, posting rhythm]</span></p>
-<p><b>Result:</b> <span class="ph">[Numbers, before and after]</span></p></div>
-<div class="card"><span class="tag">Project name</span><h3 class="ph">[Brand or account]</h3>
-<p><b>Challenge:</b> <span class="ph">[What was not working?]</span></p>
-<p><b>What I did:</b> <span class="ph">[Strategy, content types, posting rhythm]</span></p>
-<p><b>Result:</b> <span class="ph">[Numbers, before and after]</span></p></div>
-</div>
-</section>
+    <!-- 2. HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-img" src="images/hero-adire-group-styling.jpg" width="1151" height="1400" alt="Five models wearing black and white patterned adire-style outfits" fetchpriority="high">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <h1 id="hero-title">Yoruba heritage you can wear.</h1>
+        <p class="hero-lead">Handmade adire fabrics, T-shirts, shorts and notepads from Ile-Ife and Osogbo. Order in minutes on WhatsApp.</p>
+        <div class="hero-actions">
+          <a class="btn btn--light" href="https://wa.me/2348121430309?text=Hi%20KikiKrafts%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg><span>Order on WhatsApp</span>
+          </a>
+          <a class="link-arrow link-arrow--light" href="#products"><span>Browse the collection</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+      <ul class="hero-points container" aria-label="Why KikiKrafts">
+        <li><span>01</span>Handmade adire</li>
+        <li><span>02</span>Custom orders</li>
+        <li><span>03</span>Bulk orders welcome</li>
+        <li><span>04</span>Delivery to other locations</li>
+      </ul>
+    </section>
 
-<section id="process">
-<h2>How I work</h2>
-<p class="lede">A simple loop that keeps content improving every month.</p>
-<ol class="steps">
-<li><div><b>Audit</b><span>Review your account, competitors, and audience.</span></div></li>
-<li><div><b>Plan</b><span>Set goals and build a content calendar.</span></div></li>
-<li><div><b>Create</b><span>Design, shoot, edit, and write every post.</span></div></li>
-<li><div><b>Measure</b><span>Report on results and adjust the next month.</span></div></li>
-</ol>
-</section>
-</div>
+    <!-- 3. PRODUCTS -->
+    <section class="section section--cream" id="products" aria-labelledby="products-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">The collection</p>
+          <h2 id="products-title">Pick your adire</h2>
+          <p>Every piece is handmade. Tap “Order this” and your WhatsApp message is ready to send.</p>
+        </header>
 
-<footer id="contact"><div class="wrap">
-<h2>Let's grow your brand.</h2>
-<p class="lede">Tell me about your account and your goals. I reply within a day.</p>
-<a class="btn" href="mailto:your@email.com">your@email.com</a>
-<div class="links"><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">Behance</a></div>
-<p class="note">Highlighted text is placeholder content. Send me your real work and numbers and I will fill it in.</p>
-</div></footer>
+        <ul class="product-grid">
+          <li class="card reveal">
+            <figure class="card-media"><img src="images/fabric-indigo-dip-adire-cloth.jpg" width="1000" height="750" loading="lazy" alt="Handmade adire fabric in white with an indigo blue dip-dyed edge, hung to dry"></figure>
+            <div class="card-body">
+              <h3>Adire fabric</h3>
+              <p class="price">₦4,000 <span>per yard</span></p>
+              <p class="desc">Handmade adire cloth by the yard. Sew your own outfit, wrap or home piece.</p>
+              <a class="btn btn--outline btn--block" href="https://wa.me/2348121430309?text=Hi%20KikiKrafts%2C%20I%20would%20like%20to%20order%20the%20adire%20fabric.%20Is%20it%20available%3F" target="_blank" rel="noopener">Order this <span class="sr-only">: adire fabric</span></a>
+            </div>
+          </li>
+          <li class="card reveal">
+            <figure class="card-media"><img src="images/tshirt-purple-spiral-adire.jpg" width="675" height="900" loading="lazy" alt="Woman smiling in a handmade adire T-shirt with a purple spiral resist-dye pattern"></figure>
+            <div class="card-body">
+              <h3>Adire T-shirt</h3>
+              <p class="price">₦10,000 <span>round neck</span></p>
+              <p class="desc">A round-neck adire tee for everyday wear. Price depends on size.</p>
+              <a class="btn btn--outline btn--block" href="https://wa.me/2348121430309?text=Hi%20KikiKrafts%2C%20I%20would%20like%20to%20order%20the%20adire%20T-shirt.%20Is%20it%20available%3F" target="_blank" rel="noopener">Order this <span class="sr-only">: adire T-shirt</span></a>
+            </div>
+          </li>
+          <li class="card reveal">
+            <figure class="card-media"><img src="images/shorts-adire-print-flat-lay.jpg" width="507" height="900" loading="lazy" alt="Handmade adire unisex shorts with green, yellow and red spiral and floral resist-dye patterns"></figure>
+            <div class="card-body">
+              <h3>Adire unisex shorts</h3>
+              <p class="price">₦6,000</p>
+              <p class="desc">Easy shorts in adire patterns, made for lectures, hangouts and weekends.</p>
+              <a class="btn btn--outline btn--block" href="https://wa.me/2348121430309?text=Hi%20KikiKrafts%2C%20I%20would%20like%20to%20order%20the%20adire%20unisex%20shorts.%20Is%20it%20available%3F" target="_blank" rel="noopener">Order this <span class="sr-only">: adire unisex shorts</span></a>
+            </div>
+          </li>
+          <li class="card reveal">
+            <figure class="card-media"><img src="images/notepad-indigo-spiral-adire-cover.jpg" width="675" height="900" loading="lazy" alt="Hand holding a handmade adire notepad with an indigo and white spiral tie-dye cover"></figure>
+            <div class="card-body">
+              <h3>Adire notepad</h3>
+              <p class="price">From ₦3,500 <span>3 sizes</span></p>
+              <p class="desc">Small ₦3,500, Medium ₦6,000, Large ₦7,000. Sizes differ by 100 pages. Minimum order: 2 pieces.</p>
+              <a class="btn btn--outline btn--block" href="https://wa.me/2348121430309?text=Hi%20KikiKrafts%2C%20I%20would%20like%20to%20order%20the%20adire%20notepad.%20Is%20it%20available%3F" target="_blank" rel="noopener">Order this <span class="sr-only">: adire notepad</span></a>
+            </div>
+          </li>
+          <li class="card reveal">
+            <figure class="card-media"><img src="images/shirt-spiral-adire-long-sleeve.jpg" width="900" height="900" loading="lazy" alt="Adire long-sleeve shirt with a yellow, grey and black spiral resist-dye pattern"></figure>
+            <div class="card-body">
+              <h3>Adire shirts</h3>
+              <p class="price price--ask">Price on request</p>
+              <p class="desc">Adire shirts for lecture halls, events and everyday style.</p>
+              <a class="btn btn--outline btn--block" href="https://wa.me/2348121430309?text=Hi%20KikiKrafts%2C%20I%20would%20like%20the%20price%20for%20the%20adire%20shirts." target="_blank" rel="noopener">Ask for price <span class="sr-only">: adire shirts</span></a>
+            </div>
+          </li>
+          <li class="card reveal">
+            <figure class="card-media"><img src="images/tshirt-green-brown-discharged.jpg" width="900" height="900" loading="lazy" alt="Young man in a discharged adire T-shirt with a brown and green colour split on a campus path"></figure>
+            <div class="card-body">
+              <h3>Discharged T-shirts</h3>
+              <p class="price price--ask">Price on request</p>
+              <p class="desc">Discharged T-shirts with bold colour contrast.</p>
+              <a class="btn btn--outline btn--block" href="https://wa.me/2348121430309?text=Hi%20KikiKrafts%2C%20I%20would%20like%20the%20price%20for%20the%20discharged%20T-shirts." target="_blank" rel="noopener">Ask for price <span class="sr-only">: discharged T-shirts</span></a>
+            </div>
+          </li>
+          <li class="card reveal">
+            <figure class="card-media card-media--pattern" role="img" aria-label="Indigo and brown adire ring pattern, shown for the adire totebags"></figure>
+            <div class="card-body">
+              <h3>Adire totebags</h3>
+              <p class="price price--ask">Price on request</p>
+              <p class="desc">Adire totebags to carry your books and daily essentials.</p>
+              <a class="btn btn--outline btn--block" href="https://wa.me/2348121430309?text=Hi%20KikiKrafts%2C%20I%20would%20like%20the%20price%20for%20the%20adire%20totebags." target="_blank" rel="noopener">Ask for price <span class="sr-only">: adire totebags</span></a>
+            </div>
+          </li>
+        </ul>
+
+        <p class="next-step reveal">Want something different? <a href="#custom">Design a custom order</a> or <a href="#quiz">let the quiz help you choose</a>.</p>
+      </div>
+    </section>
+
+    <div class="adire-divider" aria-hidden="true"></div>
+
+    <!-- 4. QUIZ -->
+    <section class="section section--pattern" id="quiz" aria-labelledby="quiz-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Not sure where to start?</p>
+          <h2 id="quiz-title">Find your piece</h2>
+          <p>Three quick questions. One or two picks made for you.</p>
+        </header>
+        <div class="quiz reveal" id="quiz-app" data-quiz>
+          <noscript><p>Message us on <a href="https://wa.me/2348121430309">WhatsApp</a> and we will help you choose.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. WHAT IS ADIRE -->
+    <section class="section section--sand adire-section" id="adire" aria-labelledby="adire-title">
+      <div class="container adire-grid">
+        <div class="adire-copy reveal">
+          <p class="eyebrow">Our cloth</p>
+          <h2 id="adire-title">What is adire?</h2>
+          <p>Adire is a Yoruba resist-dyed cloth. Parts of the fabric are tied, stitched or covered so the dye cannot reach them. When the cloth is opened, the pattern appears.</p>
+          <p>At KikiKrafts, we bring this tradition into everyday life. We make adire you can wear to class, to work and to celebrate, so heritage goes with you.</p>
+          <a class="btn btn--primary" href="#products"><span>Browse the products</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+        <ol class="adire-steps reveal" aria-label="How adire is made">
+          <li>
+            <span class="swatch swatch--design" aria-hidden="true"></span>
+            <h3>1. Design the pattern</h3>
+            <p>Choose the marks, rings or stripes, then tie, stitch or cover the cloth.</p>
+          </li>
+          <li>
+            <span class="swatch swatch--dye" aria-hidden="true"></span>
+            <h3>2. Resist and dye</h3>
+            <p>The covered parts resist the dye. The open parts take the colour.</p>
+          </li>
+          <li>
+            <span class="swatch swatch--finish" aria-hidden="true"></span>
+            <h3>3. Dry and finish</h3>
+            <p>Let it dry, open it up and see the pattern come alive.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 6. CUSTOM ORDER -->
+    <section class="section section--cream" id="custom" aria-labelledby="custom-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Made your way</p>
+          <h2 id="custom-title">Build a custom order</h2>
+          <p>Tell us what you need. We turn it into a clear WhatsApp message, and we reply with the price.</p>
+        </header>
+        <div class="custom-grid">
+          <form class="order-form reveal" id="order-form" novalidate>
+            <div class="field">
+              <label for="f-product">Product</label>
+              <select id="f-product" name="product" required aria-describedby="e-product">
+                <option value="">Choose a product</option>
+                <option>Adire fabric</option>
+                <option>Adire T-shirt (round neck)</option>
+                <option>Adire unisex shorts</option>
+                <option>Adire notepad</option>
+                <option>Adire shirt</option>
+                <option>Discharged T-shirt</option>
+                <option>Adire totebag</option>
+                <option>Something else (custom request)</option>
+              </select>
+              <p class="error" id="e-product" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="f-size">Size</label>
+              <select id="f-size" name="size" required aria-describedby="e-size">
+                <option value="">Choose a product first</option>
+              </select>
+              <p class="error" id="e-size" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="f-colour">Colour or pattern preference</label>
+              <input id="f-colour" name="colour" type="text" autocomplete="off" placeholder="For example: indigo rings, brown and gold" required aria-describedby="e-colour">
+              <p class="error" id="e-colour" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="f-qty">Quantity</label>
+              <input id="f-qty" name="qty" type="number" min="1" step="1" inputmode="numeric" value="1" required aria-describedby="e-qty h-qty">
+              <p class="hint" id="h-qty">Notepads have a minimum order of 2 pieces. Fabric is counted in yards.</p>
+              <p class="error" id="e-qty" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="f-place">Delivery location</label>
+              <input id="f-place" name="place" type="text" autocomplete="address-level2" placeholder="Town or city, or “Pickup at Mayfair, Ile-Ife”" required aria-describedby="e-place">
+              <p class="error" id="e-place" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="f-date">Date needed</label>
+              <input id="f-date" name="date" type="date" required aria-describedby="e-date h-date">
+              <p class="hint" id="h-date">Production takes 4 to 7 days.</p>
+              <p class="error" id="e-date" aria-live="polite"></p>
+            </div>
+            <div class="field field--full">
+              <label for="f-notes">Notes <span class="opt">(optional)</span></label>
+              <textarea id="f-notes" name="notes" rows="4" placeholder="Anything else we should know?"></textarea>
+            </div>
+            <div class="form-actions field--full">
+              <button class="btn btn--primary" type="submit"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg><span>Send order on WhatsApp</span></button>
+              <button class="btn btn--outline" type="button" id="bulk-btn"><span>Request a bulk quote</span></button>
+            </div>
+          </form>
+
+          <aside class="terms-card reveal" aria-labelledby="terms-title">
+            <h3 id="terms-title">Order terms at a glance</h3>
+            <ul>
+              <li><strong>70%</strong> deposit before production starts</li>
+              <li><strong>30%</strong> balance before delivery</li>
+              <li><strong>4 to 7 days</strong> for production</li>
+              <li>Delivery fee varies by location</li>
+              <li>No returns or exchanges unless we made a mistake</li>
+            </ul>
+            <p>Ordering for a team, class or event? Use “Request a bulk quote” and we will price it for you.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. HOW ORDERING WORKS -->
+    <section class="section section--dark" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <header class="section-head section-head--light reveal">
+          <p class="eyebrow">Simple and clear</p>
+          <h2 id="how-title">How ordering works</h2>
+          <p>Four steps from first message to your adire in hand.</p>
+        </header>
+        <ol class="steps">
+          <li class="reveal"><span class="step-num">01</span><h3>Message us</h3><p>Tell us what you want on WhatsApp.</p></li>
+          <li class="reveal"><span class="step-num">02</span><h3>Pay 70% deposit</h3><p>Your deposit starts production.</p></li>
+          <li class="reveal"><span class="step-num">03</span><h3>Production in 4 to 7 days</h3><p>We make your piece by hand.</p></li>
+          <li class="reveal"><span class="step-num">04</span><h3>Pay 30% and receive</h3><p>Pay the balance before delivery, then enjoy your adire.</p></li>
+        </ol>
+        <div class="delivery-info reveal">
+          <div>
+            <h3>Delivery</h3>
+            <p>We deliver to other locations. The delivery fee varies by location.</p>
+          </div>
+          <div>
+            <h3>Pickup</h3>
+            <p>Collect at Mayfair, Ile-Ife, Monday to Saturday, 8am to 8pm.</p>
+          </div>
+          <a class="btn btn--light" href="https://wa.me/2348121430309?text=Hi%20KikiKrafts%2C%20I%20would%20like%20to%20start%20an%20order." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg><span>Start your order</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. STORY -->
+    <section class="section section--cream story" id="story" aria-labelledby="story-title">
+      <div class="container story-grid">
+        <div class="reveal">
+          <p class="eyebrow">Our story</p>
+          <h2 id="story-title">Rooted in culture, made to be worn</h2>
+        </div>
+        <div class="story-text reveal">
+          <p>KikiKrafts began when a programme helped us take our first steps in adire and in building this brand. Every step since has been driven by our love of culture and tradition.</p>
+          <p>We believe heritage should live in everyday life. So we create adire pieces that are creative, wearable and proudly Yoruba, for students, lecturers and everyone who wants to carry the culture with them.</p>
+          <a class="link-arrow" href="#gallery"><span>See our work</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. GALLERY -->
+    <section class="section section--pattern gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">In pictures</p>
+          <h2 id="gallery-title">Adire in everyday life</h2>
+          <p>Swipe, tap an image to enlarge it, or use the arrow keys.</p>
+        </header>
+        <div class="gallery-wrap reveal">
+          <button class="g-arrow g-prev" type="button" aria-label="Previous pictures"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <ul class="g-track" tabindex="0" aria-label="KikiKrafts picture gallery">
+            <li class="g-slide"><button type="button" class="g-open" aria-label="Enlarge picture"><img src="images/gallery-customer-adire-shorts-campus.jpg" width="900" height="1200" loading="lazy" alt="Smiling woman in a black top and blue adire shorts standing outside on campus"></button></li>
+            <li class="g-slide"><button type="button" class="g-open" aria-label="Enlarge picture"><img src="images/gallery-notepad-indigo-rings-adire.jpg" width="900" height="1200" loading="lazy" alt="Indigo adire notepad with white ring patterns, held beside a KikiKrafts card"></button></li>
+            <li class="g-slide"><button type="button" class="g-open" aria-label="Enlarge picture"><img src="images/gallery-tshirt-blue-spiral-adire.jpg" width="900" height="1200" loading="lazy" alt="Smiling man in a light blue handmade adire T-shirt with a spiral pattern"></button></li>
+            <li class="g-slide"><button type="button" class="g-open" aria-label="Enlarge picture"><img src="images/gallery-notepad-purple-indigo-personalised.jpg" width="900" height="1200" loading="lazy" alt="Purple and indigo adire notepads held in one hand"></button></li>
+            <li class="g-slide"><button type="button" class="g-open" aria-label="Enlarge picture"><img src="images/gallery-fabric-grey-green-tiedye.jpg" width="900" height="1200" loading="lazy" alt="Grey-green handmade adire fabric with white tie-dye marks hung outdoors"></button></li>
+            <li class="g-slide"><button type="button" class="g-open" aria-label="Enlarge picture"><img src="images/gallery-notepad-indigo-stripes-adire.jpg" width="900" height="1200" loading="lazy" alt="Blue adire notepad with soft stripe resist-dye pattern held against a brick wall"></button></li>
+            <li class="g-slide"><button type="button" class="g-open" aria-label="Enlarge picture"><img src="images/gallery-tshirt-lilac-adire.jpg" width="900" height="1200" loading="lazy" alt="Woman in a lilac adire T-shirt with a radiating resist-dye pattern"></button></li>
+            <li class="g-slide"><button type="button" class="g-open" aria-label="Enlarge picture"><img src="images/gallery-notepad-pink-indigo-tiedye.jpg" width="900" height="1200" loading="lazy" alt="Pink, white and indigo tie-dye adire notepad held in front of green leaves"></button></li>
+            <li class="g-slide"><button type="button" class="g-open" aria-label="Enlarge picture"><img src="images/gallery-fabric-red-tiedye.jpg" width="900" height="1200" loading="lazy" alt="Red handmade adire fabric with mottled white resist-dye marks"></button></li>
+            <li class="g-slide"><button type="button" class="g-open" aria-label="Enlarge picture"><img src="images/gallery-notepad-orex-indigo-adire.jpg" width="900" height="1200" loading="lazy" alt="Deep indigo adire notepad held up in a hand"></button></li>
+            <li class="g-slide"><button type="button" class="g-open" aria-label="Enlarge picture"><img src="images/gallery-adire-shorts-worn-outdoors.jpg" width="810" height="1080" loading="lazy" alt="Man in a grey jacket and dark blue adire shorts standing on a tree-lined road"></button></li>
+            <li class="g-slide"><button type="button" class="g-open" aria-label="Enlarge picture"><img src="images/gallery-notepad-charcoal-adire.jpg" width="900" height="1200" loading="lazy" alt="Charcoal grey adire notepad with white tie-dye texture held outdoors"></button></li>
+          </ul>
+          <button class="g-arrow g-next" type="button" aria-label="Next pictures"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+        <div class="g-dots" role="group" aria-label="Choose picture"></div>
+        <p class="next-step reveal">Love what you see? <a href="#custom">Order your own piece</a>.</p>
+      </div>
+    </section>
+
+    <!-- 10. FOLLOW -->
+    <section class="section section--sand" id="follow" aria-labelledby="follow-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Stay close</p>
+          <h2 id="follow-title">Follow our work</h2>
+          <p>See new adire pieces and what we are making next.</p>
+        </header>
+        <ul class="follow-list">
+          <li class="reveal"><a class="follow-card" href="https://www.instagram.com/kikikrafts_adire" target="_blank" rel="noopener"><span class="follow-name">Instagram</span><span class="follow-handle">@kikikrafts_adire</span><span class="follow-go">Follow on Instagram <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+          <li class="reveal"><a class="follow-card" href="https://www.tiktok.com/@KikiKrafts_adire" target="_blank" rel="noopener"><span class="follow-name">TikTok</span><span class="follow-handle">@KikiKrafts_adire</span><span class="follow-go">Follow on TikTok <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- 11. CONTACT AND FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="logo logo--footer">KikiKrafts</p>
+        <p>Yoruba heritage you can wear. Handmade adire from Ile-Ife and Osogbo.</p>
+        <a class="btn btn--light" href="https://wa.me/2348121430309?text=Hi%20KikiKrafts%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg><span>Order on WhatsApp</span></a>
+      </div>
+      <div>
+        <h2 class="footer-title">Contact</h2>
+        <ul class="footer-list">
+          <li><a href="https://wa.me/2348121430309" target="_blank" rel="noopener">WhatsApp: +234 812 143 0309</a></li>
+          <li><a href="https://www.instagram.com/kikikrafts_adire" target="_blank" rel="noopener">Instagram: @kikikrafts_adire</a></li>
+          <li><a href="https://www.tiktok.com/@KikiKrafts_adire" target="_blank" rel="noopener">TikTok: @KikiKrafts_adire</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Visit and hours</h2>
+        <address class="footer-list">
+          Pickup: Mayfair, Ile-Ife<br>
+          Also serving Osogbo<br>
+          Monday to Saturday<br>
+          8am to 8pm
+        </address>
+      </div>
+      <div>
+        <h2 class="footer-title">Order terms</h2>
+        <ul class="footer-list">
+          <li>Production takes 4 to 7 days</li>
+          <li>70% before production, 30% before delivery</li>
+          <li>Delivery fee varies by location</li>
+          <li>No returns or exchanges unless we made a mistake</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-base"><p>© <span id="year">2026</span> KikiKrafts. All rights reserved.</p></div>
+  </footer>
+
+  <!-- 12. FLOATING WHATSAPP -->
+  <a class="wa-float" href="https://wa.me/2348121430309?text=Hi%20KikiKrafts%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+    <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>
+  </a>
+
+  <dialog class="lightbox" aria-label="Enlarged picture">
+    <button class="lb-close" type="button" aria-label="Close picture">×</button>
+    <button class="lb-nav lb-prev" type="button" aria-label="Previous picture"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+    <img class="lb-img" src="" alt="">
+    <button class="lb-nav lb-next" type="button" aria-label="Next picture"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+    <p class="lb-caption"></p>
+  </dialog>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
