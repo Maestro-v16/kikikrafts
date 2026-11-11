@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Peter | Social Media Manager</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#F2F4F8;--surface:#FFFFFF;--ink:#101828;--muted:#566072;--line:#D9DEE8;--blue:#2B4EFF;--on-blue:#FFFFFF;--sun:#FFB400;--on-sun:#101828;--ph:#FFF1C2;--ph-ink:#6B4A00;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1420;--surface:#171E2D;--ink:#F2F4F8;--muted:#9AA5B8;--line:#2A3347;--blue:#6C86FF;--on-blue:#0F1420;--ph:#3A2F0A;--ph-ink:#FFD66B}}
+:root[data-theme="dark"]{--bg:#0F1420;--surface:#171E2D;--ink:#F2F4F8;--muted:#9AA5B8;--line:#2A3347;--blue:#6C86FF;--on-blue:#0F1420;--ph:#3A2F0A;--ph-ink:#FFD66B}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.05;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+section{padding:64px 0}
+h2{font-size:clamp(28px,5vw,40px);margin-bottom:12px}
+.lede{color:var(--muted);max-width:56ch;margin:0 0 32px}
+.ph{background:var(--ph);color:var(--ph-ink);padding:0 5px;border-radius:4px;font-weight:500}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+nav b{font-family:"Bricolage Grotesque",sans-serif;font-size:20px}
+nav a{text-decoration:none;font-weight:500}
+.hero{display:grid;gap:40px;padding:36px 0 56px;align-items:center}
+@media(min-width:800px){.hero{grid-template-columns:1.15fr .85fr}}
+.hero h1{font-size:clamp(44px,9vw,84px);font-weight:800}
+.hero p{font-size:19px;color:var(--muted);max-width:46ch;margin:20px 0 28px}
+.btn{display:inline-block;background:var(--blue);color:var(--on-blue);padding:14px 24px;border-radius:999px;font-weight:700;text-decoration:none}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--line);margin-left:8px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:380px;justify-self:center;width:100%}
+.tile{aspect-ratio:1;border-radius:10px;padding:10px;display:flex;align-items:flex-end;font-weight:700;font-size:13px;background:var(--surface);border:1px solid var(--line)}
+.tile.b{background:var(--blue);color:var(--on-blue);border-color:transparent}
+.tile.s{background:var(--sun);color:var(--on-sun);border-color:transparent}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.stat{border-top:3px solid var(--blue);padding-top:12px}
+.stat strong{font-family:"Bricolage Grotesque",sans-serif;font-size:38px;display:block}
+.stat span{color:var(--muted);font-size:15px}
+.cols{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card h3{font-size:22px;margin-bottom:8px}
+.card p{margin:6px 0;color:var(--muted)}
+.card p b{color:var(--ink)}
+.tag{display:inline-block;font-size:13px;font-weight:700;color:var(--blue);margin-bottom:10px}
+.steps{display:grid;gap:14px;counter-reset:s;padding:0;list-style:none;margin:0}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start}
+.steps li::before{content:counter(s);width:44px;height:44px;border-radius:50%;background:var(--sun);color:var(--on-sun);display:grid;place-items:center;font-weight:800}
+.steps b{display:block}
+.steps span{color:var(--muted)}
+footer{padding:64px 0 48px;border-top:1px solid var(--line)}
+footer h2{font-size:clamp(34px,7vw,64px)}
+.links{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}
+.links a{font-weight:700}
+.note{font-size:14px;color:var(--muted);margin-top:36px}
+@media(prefers-reduced-motion:no-preference){.tile{animation:pop .5s both}.tile:nth-child(2){animation-delay:.05s}.tile:nth-child(3){animation-delay:.1s}.tile:nth-child(4){animation-delay:.15s}.tile:nth-child(5){animation-delay:.2s}.tile:nth-child(6){animation-delay:.25s}.tile:nth-child(7){animation-delay:.3s}.tile:nth-child(8){animation-delay:.35s}.tile:nth-child(9){animation-delay:.4s}}
+@keyframes pop{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>Peter</b><a href="#contact">Get in touch</a></nav>
+
+<header class="hero">
+<div>
+<h1>I turn feeds into audiences.</h1>
+<p>Social media manager and brand designer. I plan the content, design it, edit the video, and track what works, so your brand grows with people who care.</p>
+<a class="btn" href="#work">See my work</a><a class="btn alt" href="#contact">Hire me</a>
+</div>
+<div class="grid" aria-hidden="true">
+<div class="tile b">Reel</div><div class="tile">Carousel</div><div class="tile s">Story</div>
+<div class="tile">Post</div><div class="tile b">Launch</div><div class="tile">Reel</div>
+<div class="tile s">Poll</div><div class="tile">Carousel</div><div class="tile b">Collab</div>
+</div>
+</header>
+
+<section id="results">
+<h2>Results so far</h2>
+<p class="lede">Real numbers from real accounts. Replace each highlighted figure with yours.</p>
+<div class="stats">
+<div class="stat"><strong class="ph">[+X%]</strong><span>follower growth in [X] months</span></div>
+<div class="stat"><strong class="ph">[X%]</strong><span>average engagement rate</span></div>
+<div class="stat"><strong class="ph">[X]K</strong><span>peak reel views</span></div>
+<div class="stat"><strong class="ph">[X]</strong><span>brands and projects managed</span></div>
+</div>
+</section>
+
+<section id="services">
+<h2>What I do</h2>
+<p class="lede">One person covering strategy, design, and video, so nothing gets lost between teams.</p>
+<div class="cols">
+<div class="card"><h3>Content strategy</h3><p>Monthly calendars built around your audience, your goals, and the formats that perform on each platform.</p></div>
+<div class="card"><h3>Design and branding</h3><p>Carousels, covers, templates, and story sets that look like one brand. Built in Figma, Canva, and Adobe.</p></div>
+<div class="card"><h3>Video and reels</h3><p>Shooting direction, editing, captions, and hooks for short-form video.</p></div>
+<div class="card"><h3>Community and analytics</h3><p>Replying, engaging, and a clear monthly report on what grew and what to change.</p></div>
+</div>
+</section>
+
+<section id="work">
+<h2>Selected work</h2>
+<p class="lede">Each project follows the same story: the problem, what I did, what changed.</p>
+<div class="cols">
+<div class="card"><span class="tag">Project name</span><h3 class="ph">[Brand or account]</h3>
+<p><b>Challenge:</b> <span class="ph">[What was not working?]</span></p>
+<p><b>What I did:</b> <span class="ph">[Strategy, content types, posting rhythm]</span></p>
+<p><b>Result:</b> <span class="ph">[Numbers, before and after]</span></p></div>
+<div class="card"><span class="tag">Project name</span><h3 class="ph">[Brand or account]</h3>
+<p><b>Challenge:</b> <span class="ph">[What was not working?]</span></p>
+<p><b>What I did:</b> <span class="ph">[Strategy, content types, posting rhythm]</span></p>
+<p><b>Result:</b> <span class="ph">[Numbers, before and after]</span></p></div>
+<div class="card"><span class="tag">Project name</span><h3 class="ph">[Brand or account]</h3>
+<p><b>Challenge:</b> <span class="ph">[What was not working?]</span></p>
+<p><b>What I did:</b> <span class="ph">[Strategy, content types, posting rhythm]</span></p>
+<p><b>Result:</b> <span class="ph">[Numbers, before and after]</span></p></div>
+</div>
+</section>
+
+<section id="process">
+<h2>How I work</h2>
+<p class="lede">A simple loop that keeps content improving every month.</p>
+<ol class="steps">
+<li><div><b>Audit</b><span>Review your account, competitors, and audience.</span></div></li>
+<li><div><b>Plan</b><span>Set goals and build a content calendar.</span></div></li>
+<li><div><b>Create</b><span>Design, shoot, edit, and write every post.</span></div></li>
+<li><div><b>Measure</b><span>Report on results and adjust the next month.</span></div></li>
+</ol>
+</section>
+</div>
+
+<footer id="contact"><div class="wrap">
+<h2>Let's grow your brand.</h2>
+<p class="lede">Tell me about your account and your goals. I reply within a day.</p>
+<a class="btn" href="mailto:your@email.com">your@email.com</a>
+<div class="links"><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">Behance</a></div>
+<p class="note">Highlighted text is placeholder content. Send me your real work and numbers and I will fill it in.</p>
+</div></footer>
+</body>
+</html>
