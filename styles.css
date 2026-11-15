@@ -75,7 +75,7 @@ address { font-style: normal; }
 .site-header { position: fixed; inset: 0 0 auto 0; z-index: 50; height: var(--header-h); transition: background-color .3s ease, box-shadow .3s ease; }
 .site-header.scrolled, .site-header.menu-open { background: rgba(46, 28, 18, .96); box-shadow: 0 6px 24px rgba(0,0,0,.18); }
 .header-inner { height: 100%; display: flex; align-items: center; gap: 12px; }
-.logo { font-family: var(--font-display); font-size: 1.7rem; font-weight: 600; color: #fff; text-decoration: none; letter-spacing: .01em; margin: 0; line-height: 1; margin-right: auto; }
+.logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); font-size: 1.7rem; font-weight: 600; color: #fff; text-decoration: none; letter-spacing: .01em; margin: 0; line-height: 1; margin-right: auto; }
 .header-cta span { display: none; }
 .header-cta { padding: 0 14px; }
 .menu-toggle { width: 44px; height: 44px; border: 0; background: transparent; cursor: pointer; display: grid; place-items: center; color: #fff; }
@@ -342,3 +342,16 @@ address { font-style: normal; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; scroll-behavior: auto !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+
+/* Logo mark, tote section, credit */
+.logo-mark { width: 40px; height: 40px; border-radius: 10px; object-fit: cover; flex: none; }
+.logo--footer .logo-mark { width: 52px; height: 52px; border-radius: 12px; }
+.g-slide--cta { display: flex; }
+.g-cta { width: 100%; aspect-ratio: 3 / 4; background: var(--brown-900); color: #f7efe3; border-radius: var(--radius); padding: var(--s-4) var(--s-3); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: var(--s-2); }
+.g-cta h3 { font-family: var(--font-display); font-size: 2rem; font-weight: 500; color: #fff; }
+.g-cta p { color: #e6d8c6; margin: 0; }
+.tote-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--s-2) var(--s-3); margin-top: var(--s-4); }
+.desc a { font-weight: 600; }
+.footer-base { display: flex; flex-direction: column; gap: 6px; }
+.credit a { color: var(--gold); display: inline-block; min-height: 32px; }
+@media (min-width: 768px) { .footer-base { flex-direction: row; justify-content: space-between; align-items: center; } }
