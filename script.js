@@ -331,7 +331,30 @@
     });
   }
 
+  /* ---------- Reviews ----------
+     Add ONLY real reviews from real customers, with their permission.
+     Each item: { text: 'their words', name: 'First name', product: 'What they bought' }
+     Leave the list empty and the section shows only the "Leave a review" button. */
+  var REVIEWS = [ { text: " I really love the designs. The journal and shirts are beautiful, and the quality is really nice", name: "Abisola", product: "Adire notepad" },
+  { text: "", name: "First name", product: "Adire T-shirt" }];
+
+  function initReviews() {
+    var list = $('#review-list');
+    if (!list || !REVIEWS.length) return;
+    REVIEWS.forEach(function (r) {
+      var li = document.createElement('li');
+      var fig = document.createElement('figure'); fig.className = 'review-card';
+      var q = document.createElement('blockquote'); q.textContent = '\u201C' + r.text + '\u201D';
+      var cap = document.createElement('figcaption'); cap.textContent = r.name;
+      if (r.product) { var s = document.createElement('span'); s.textContent = r.product; cap.appendChild(s); }
+      fig.appendChild(q); fig.appendChild(cap); li.appendChild(fig); list.appendChild(li);
+    });
+    $('#reviews-eyebrow').textContent = 'Kind words';
+    $('#reviews-title').textContent = 'What customers say';
+  }
+
   initQuiz();
+  initReviews();
   initOrder();
   initGallery();
 })();
