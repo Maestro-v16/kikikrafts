@@ -351,7 +351,7 @@
     { text: "I really love the notepad! The Adire design is so fine. Beautiful piece, I love it!", name: "Sammy", product: "Adire notepad" },
     { text: "The adire shirt I got from you, I love it, it's so comfy. Even the cargo pant knicker also, I so much love them. I got a lot of compliments.", name: "Ikeoluwa", product: "Adire shirt" },
     { text: "I really love the designs. The journal and shirts are beautiful, and the quality is really nice. I love the creativity behind them. Keep it up!", name: "Orex", product: "Journal and shirts" },
-    { text: "I really like the softness of the fabric and the pattern is so pretty. Thank you so much for always delivering, you are the best.", name: "KikiKrafts customer" },
+    { text: "I really like the softness of the fabric and the pattern is so pretty. Thank you so much for always delivering, you are the best.", name: "Oluwasegun" },
     { text: "The shirt was very nice, got compliments from people a lot that it matches my skin color. Still wear it till now.", name: "Olaronke", product: "Shirt" },
     { text: "I honestly do love the revamping you did for me. I love the color, got a lot of compliments and I recommended you to some people.", name: "Ifetayo" }
   ];
